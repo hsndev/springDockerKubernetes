@@ -1,5 +1,5 @@
 pipeline {
-	agent none
+  agent none
   stages {
   	stage('Maven Install') {
     	agent {
@@ -14,7 +14,7 @@ pipeline {
     stage('Docker Build') {
     	agent any
       steps {
-      	sh 'docker build -t dockerBackend .'
+      	sh 'docker build -t docker-backend-1.jar:latest .'
       }
     }
   }
