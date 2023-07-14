@@ -7,7 +7,7 @@
         stage('BUILD MAVEN PROJECT') {
 
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/hsndev/springDockerKubernetes']])
+                // checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/hsndev/springDockerKubernetes']])
                 sh 'mvn clean install'
             }
         }
