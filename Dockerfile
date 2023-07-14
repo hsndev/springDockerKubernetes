@@ -5,5 +5,5 @@
 #ENTRYPOINT ["java", "-jar", "backend.jar"]
 FROM openjdk:17-jdk-slim-buster
 LABEL maintainer="shanem@liatrio.com"
-COPY /target/dockerBackend-0.0.1.jar /dockerBackend.jar
-CMD ["java","-jar","/dockerBackend.jar"]
+COPY /target/dockerBackend-0.0.1.jar docker-backend-1.jar
+CMD ["java","-jar","docker-backend-1.jar"]
